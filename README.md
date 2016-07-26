@@ -7,7 +7,7 @@ AF_MCocoapods
 
 
 BaseRequestApi
-1.getBaseHeader			//请求基础header
+1.getBaseHeader			//请求基础header\r\n
 2.getBaseBody			//亲求基础body
 3.getRootUrl				//请求rootUrl
 4.getPath					//请求url后半部分
