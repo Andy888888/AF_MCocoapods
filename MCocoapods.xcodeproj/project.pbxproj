@@ -24,6 +24,9 @@
 		80A5FDA21D475A9600BD2126 /* PermisstionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDA11D475A9600BD2126 /* PermisstionsModel.m */; };
 		80A5FDA51D475B3900BD2126 /* OperatorValPermisstionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDA41D475B3900BD2126 /* OperatorValPermisstionModel.m */; };
 		80A5FDA81D475E5F00BD2126 /* DataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDA71D475E5F00BD2126 /* DataConvert.m */; };
+		80B410521D47A713000C1920 /* BaseServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B410511D47A713000C1920 /* BaseServiceManager.m */; };
+		80B410581D47C2AC000C1920 /* GetUserPermissionApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B410571D47C2AC000C1920 /* GetUserPermissionApi.m */; };
+		80B4105B1D47C4B7000C1920 /* BaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B4105A1D47C4B7000C1920 /* BaseApi.m */; };
 		D7EDFB7BA016455E4D72468E /* Pods_MCocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9427D81B963677C928BD3AA7 /* Pods_MCocoapods.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +83,13 @@
 		80A5FDA41D475B3900BD2126 /* OperatorValPermisstionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OperatorValPermisstionModel.m; path = RepEntity/SubModel/OperatorValPermisstionModel.m; sourceTree = "<group>"; };
 		80A5FDA61D475E5F00BD2126 /* DataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataConvert.h; path = Tool/DataConvert.h; sourceTree = "<group>"; };
 		80A5FDA71D475E5F00BD2126 /* DataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataConvert.m; path = Tool/DataConvert.m; sourceTree = "<group>"; };
+		80B410501D47A713000C1920 /* BaseServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseServiceManager.h; path = Service/BaseServiceManager.h; sourceTree = "<group>"; };
+		80B410511D47A713000C1920 /* BaseServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseServiceManager.m; path = Service/BaseServiceManager.m; sourceTree = "<group>"; };
+		80B410531D47A840000C1920 /* BaseApiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseApiDelegate.h; path = Service/BaseApiDelegate.h; sourceTree = "<group>"; };
+		80B410561D47C2AC000C1920 /* GetUserPermissionApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetUserPermissionApi.h; path = Service/GetUserPermissionApi.h; sourceTree = "<group>"; };
+		80B410571D47C2AC000C1920 /* GetUserPermissionApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetUserPermissionApi.m; path = Service/GetUserPermissionApi.m; sourceTree = "<group>"; };
+		80B410591D47C4B7000C1920 /* BaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseApi.h; path = Service/BaseApi.h; sourceTree = "<group>"; };
+		80B4105A1D47C4B7000C1920 /* BaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseApi.m; path = Service/BaseApi.m; sourceTree = "<group>"; };
 		9427D81B963677C928BD3AA7 /* Pods_MCocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96579D2572B1BA21F72081A /* Pods-MCocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCocoapods/Pods-MCocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +162,7 @@
 		8000CA871D470A4500BDA0EC /* MCocoapods */ = {
 			isa = PBXGroup;
 			children = (
+				80B4104F1D47A6B3000C1920 /* Service */,
 				80A5FD8C1D47565A00BD2126 /* RepEntity */,
 				80A5FD881D47544500BD2126 /* Tool */,
 				8000CA8B1D470A4500BDA0EC /* AppDelegate.h */,
@@ -231,6 +242,20 @@
 				80A5FDA41D475B3900BD2126 /* OperatorValPermisstionModel.m */,
 			);
 			name = SubModel;
+			sourceTree = "<group>";
+		};
+		80B4104F1D47A6B3000C1920 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80B410501D47A713000C1920 /* BaseServiceManager.h */,
+				80B410511D47A713000C1920 /* BaseServiceManager.m */,
+				80B410531D47A840000C1920 /* BaseApiDelegate.h */,
+				80B410591D47C4B7000C1920 /* BaseApi.h */,
+				80B4105A1D47C4B7000C1920 /* BaseApi.m */,
+				80B410561D47C2AC000C1920 /* GetUserPermissionApi.h */,
+				80B410571D47C2AC000C1920 /* GetUserPermissionApi.m */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,11 +442,14 @@
 				80A5FD961D47592A00BD2126 /* SubBaseModel.m in Sources */,
 				8000CA901D470A4500BDA0EC /* ViewController.m in Sources */,
 				8000CA8D1D470A4500BDA0EC /* AppDelegate.m in Sources */,
+				80B410581D47C2AC000C1920 /* GetUserPermissionApi.m in Sources */,
+				80B410521D47A713000C1920 /* BaseServiceManager.m in Sources */,
 				80A5FDA81D475E5F00BD2126 /* DataConvert.m in Sources */,
 				80A5FDA51D475B3900BD2126 /* OperatorValPermisstionModel.m in Sources */,
 				80A5FDA21D475A9600BD2126 /* PermisstionsModel.m in Sources */,
 				8000CA8A1D470A4500BDA0EC /* main.m in Sources */,
 				80A5FD8B1D47548800BD2126 /* DataService.m in Sources */,
+				80B4105B1D47C4B7000C1920 /* BaseApi.m in Sources */,
 				80A5FD8F1D47574B00BD2126 /* PermUserEntity.m in Sources */,
 				80A5FD9C1D4759F900BD2126 /* DepartmentModel.m in Sources */,
 				80A5FD921D47579B00BD2126 /* APlusBaseEntity.m in Sources */,

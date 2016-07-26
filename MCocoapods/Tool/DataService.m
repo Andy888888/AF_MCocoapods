@@ -33,6 +33,9 @@
     
     //设置超时时间
     manager.requestSerializer.timeoutInterval = 30;
+    NSLog(@"--超时时间：%f",manager.requestSerializer.timeoutInterval);
+    [self setTimeOut:manager];
+    NSLog(@"--超时时间：%f",manager.requestSerializer.timeoutInterval);
     
     if ([method isEqualToString:@"GET"]) {//////////////////////////--------GET请求
         [manager GET:newStr
@@ -131,6 +134,12 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
     
     
     
+}
+
++ (void)setTimeOut:(AFHTTPSessionManager *)manager
+{
+    manager.requestSerializer.timeoutInterval = 43;
+    NSLog(@"==超时时间：%f",manager.requestSerializer.timeoutInterval);
 }
 
 @end
