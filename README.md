@@ -7,15 +7,16 @@ AF_MCocoapods
 3.set timeOut		manager.requestSerializer.timeoutInterval = 30;
 
 
-BaseRequestApi
-1.getBaseHeader:请求基础header
+[BaseRequestApi]
 
-2.getBaseBody			//亲求基础body
+1.getBaseHeader     //请求基础header
+
+2.getBaseBody       //请求基础body
 
 3.getRootUrl				//请求rootUrl
 
-4.getPath					//请求url后半部分
+4.getPath           //请求url后半部分
 
-5.getRequestMethod		//请求方式
+5.getRequestMethod  //请求方式
 
 6.setTimeOut				//设置超时时间
