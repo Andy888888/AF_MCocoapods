@@ -15,7 +15,6 @@
 - (NSString *)getRootUrl
 {
     return nil;
-//    return @"http://10.5.10.42:9016/api/";
 }
 
 
@@ -24,11 +23,13 @@
 /*  虽然是必须实现，但是在BaseApi中却是可选实现的  */
 
 /// 请求基础body
+/// @warning 默认body为nil
 - (NSDictionary *)getBaseBody
 {
     return nil;
 }
 /// 请求方式
+/// @warning 默认方式为Post（RequestMethodPOST）
 - (int)getRequestMethod
 {
     return RequestMethodPOST;
@@ -40,10 +41,18 @@
 /*  虽然是可选，但是在BaseApi中却是必须实现的  */
 
 /// 请求基础header
+/// @warning 默认header为nil
 - (NSDictionary *)getBaseHeader
 {
     return nil;
 }
+
+
+
+
+
+
+
 
 
 

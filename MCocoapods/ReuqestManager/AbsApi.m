@@ -17,17 +17,19 @@
     return reqUrl;
 }
 
-/// 设置超时时间
+/// 设置超时时间，默认10秒
 - (int)getTimeOut
 {
     return 10;
 }
 
+/// @warning rootUrl默认为nil
 - (NSString *)getRootUrl
 {
     return nil;
 }
 
+/// @warning path默认为nil
 - (NSString *)getPath
 {
     return nil;

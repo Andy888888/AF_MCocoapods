@@ -8,35 +8,48 @@
 
 #import <UIKit/UIKit.h>
 
+/// BaseApi 需要遵守的协议，用来规范请求参数以及设置
+/// @warning 请不要随便修改
 @protocol BaseApiDelegate <NSObject>
 
 /// 必须实现
 @required
-
 /// 请求基础body
+/// @warning 默认为nil，遵守实现者必须实现
 - (NSDictionary *)getBaseBody;
 /// 请求方式
+/// @warning 默认为Post（RequestMethodPOST）
 - (int)getRequestMethod;
-
 
 //可选实现
 @optional
-
 /// 请求基础header
+/// @warning 默认为nil
 - (NSDictionary *)getBaseHeader;
-
 
 @end
 
+/// AbsApi 需要遵守的协议，为规范AbsApi对象拥有getRootUrl和getPath方法
+/// @warning 请不要随便修改
 @protocol AbsApiDelegate <NSObject>
 
 /// 必须实现
 @required
-
 /// 请求rootUrl
+/// @warning 默认为nil，遵守实现者必须实现
 - (NSString *)getRootUrl;
 /// 请求url后半部分
+/// @warning 默认为nil，遵守实现者必须实现
 - (NSString *)getPath;
+
+
+
+
+
+
+
+
+
 
 
 @end
