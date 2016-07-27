@@ -37,7 +37,7 @@ static RequestManager *_manager;
     NSString *requestUrl = [api getReqUrl];
     NSDictionary *bodyDic = [api getBaseBody];
     
-    AFHTTPSessionManager *manager = [self setApiForHttpRequest:api];
+    AFHTTPSessionManager *manager = [self createAFHttpManagerForApi:api];
     
     [manager POST:requestUrl
        parameters:bodyDic
@@ -64,7 +64,7 @@ static RequestManager *_manager;
     NSString *requestUrl = [api getReqUrl];
     NSDictionary *paramDic = [api getBaseBody];
     
-    AFHTTPSessionManager *manager = [self setApiForHttpRequest:api];
+    AFHTTPSessionManager *manager = [self createAFHttpManagerForApi:api];
     
     [manager GET:requestUrl
       parameters:paramDic
