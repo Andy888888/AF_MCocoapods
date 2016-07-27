@@ -42,6 +42,10 @@
     [super viewWillAppear:animated];
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
 
 #pragma mark - 事件
 
@@ -64,6 +68,7 @@
 
 }
 
+#pragma mark - 数据返回 ResponseDelegate
 
 - (void)respSuc:(id)data{
     NSLog(@"第二个界面返回数据：%@",data);
@@ -80,9 +85,6 @@
     NSLog(@"%@",error);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 
 @end
