@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseApi.h"
+#import "APlusBaseApi.h"
 
-@interface GetUserPermissionApi : BaseApi
+@interface GetUserPermissionApi : APlusBaseApi
 
 @end

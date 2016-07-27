@@ -31,7 +31,6 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [_manager cancelAllRequest];
-    _manager.delegate = nil;
 }
 
 - (void)respSuc:(id)data

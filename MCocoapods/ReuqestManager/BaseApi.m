@@ -14,7 +14,8 @@
 
 - (NSString *)getRootUrl
 {
-    return @"http://10.5.10.42:9016/api/";
+    return nil;
+//    return @"http://10.5.10.42:9016/api/";
 }
 
 

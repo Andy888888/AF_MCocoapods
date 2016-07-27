@@ -30,6 +30,7 @@
 		80A5FDBC1D484C6200BD2126 /* AbsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDBB1D484C6200BD2126 /* AbsApi.m */; };
 		80A5FDBF1D487C3800BD2126 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDBE1D487C3800BD2126 /* RequestManager.m */; };
 		80A5FDC21D48827100BD2126 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDC11D48827100BD2126 /* BaseViewController.m */; };
+		80A5FDC51D489A8B00BD2126 /* APlusBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDC41D489A8B00BD2126 /* APlusBaseApi.m */; };
 		D7EDFB7BA016455E4D72468E /* Pods_MCocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9427D81B963677C928BD3AA7 /* Pods_MCocoapods.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,8 @@
 		80A5FDBE1D487C3800BD2126 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestManager.m; path = ReuqestManager/RequestManager.m; sourceTree = "<group>"; };
 		80A5FDC01D48827100BD2126 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		80A5FDC11D48827100BD2126 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		80A5FDC31D489A8B00BD2126 /* APlusBaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APlusBaseApi.h; path = ReqApi/APlusBaseApi.h; sourceTree = "<group>"; };
+		80A5FDC41D489A8B00BD2126 /* APlusBaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APlusBaseApi.m; path = ReqApi/APlusBaseApi.m; sourceTree = "<group>"; };
 		9427D81B963677C928BD3AA7 /* Pods_MCocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96579D2572B1BA21F72081A /* Pods-MCocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCocoapods/Pods-MCocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +262,8 @@
 		80A5FDB31D4846B300BD2126 /* ReqApi */ = {
 			isa = PBXGroup;
 			children = (
+				80A5FDC31D489A8B00BD2126 /* APlusBaseApi.h */,
+				80A5FDC41D489A8B00BD2126 /* APlusBaseApi.m */,
 				80A5FDB71D48476B00BD2126 /* GetUserPermissionApi.h */,
 				80A5FDB81D48476B00BD2126 /* GetUserPermissionApi.m */,
 			);
@@ -468,6 +473,7 @@
 				8000CA8D1D470A4500BDA0EC /* AppDelegate.m in Sources */,
 				80A5FDBC1D484C6200BD2126 /* AbsApi.m in Sources */,
 				80A5FDA81D475E5F00BD2126 /* DataConvert.m in Sources */,
+				80A5FDC51D489A8B00BD2126 /* APlusBaseApi.m in Sources */,
 				80A5FDA51D475B3900BD2126 /* OperatorValPermisstionModel.m in Sources */,
 				80A5FDB91D48476B00BD2126 /* GetUserPermissionApi.m in Sources */,
 				80A5FDA21D475A9600BD2126 /* PermisstionsModel.m in Sources */,
