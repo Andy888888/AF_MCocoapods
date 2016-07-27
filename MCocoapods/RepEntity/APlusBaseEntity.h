@@ -16,7 +16,6 @@
 @property (nonatomic,assign) BOOL flag;
 @property (nonatomic,strong) NSString *errorMsg;
 @property (nonatomic,strong) NSString *runTime;
-@property (nonatomic,assign) NSInteger tag;
 
 + (NSMutableDictionary *)getBaseFieldMapping;
 + (NSMutableDictionary *)getBaseFieldWithOthers:(NSDictionary *)dic;

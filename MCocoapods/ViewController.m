@@ -11,7 +11,7 @@
 #import "DataConvert.h"
 #import "PermUserEntity.h"
 #import "DepartmentModel.h"
-#import "BaseServiceManager.h"
+#import "RequestManager.h"
 #import "GetUserPermissionApi.h"
 
 
@@ -23,19 +23,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 - (IBAction)btnClick:(id)sender {
     
 //    [self sendOld];
-    
-    [self sendFun];
-    
+//    [self sendFun];
+    [self sendUseProtocal];
 }
 
 - (void)sendOld
@@ -52,9 +49,7 @@
                           DidFinisBlock:^(id result) {
     
                               PermUserEntity *perUser = [DataConvert convertDic:result toEntity:[PermUserEntity class]];
-    
                               DepartmentModel *depart = perUser.PermUserInfos[0];
-    
                               UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"
                                                                             message:depart.identify.uName
                                                                            delegate:nil cancelButtonTitle:@"cancle" otherButtonTitles:@"ok", nil];
@@ -67,16 +62,13 @@
                           }];
 }
 
-- (void)sendFun
+- (void)sendUseBlock
 {
     GetUserPermissionApi *api = [[GetUserPermissionApi alloc]init];
-    
-    BaseServiceManager *manager = [BaseServiceManager shareManager];
-    [manager sendRequest:api sucBlock:^(id result) {
+    [_manager sendRequest:api sucBlock:^(id result) {
+        
         PermUserEntity *perUser = [DataConvert convertDic:result toEntity:[PermUserEntity class]];
-        
         DepartmentModel *depart = perUser.PermUserInfos[0];
-        
         UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"
                                                       message:depart.identify.uName
                                                      delegate:nil cancelButtonTitle:@"cancle" otherButtonTitles:@"ok", nil];
@@ -86,7 +78,27 @@
     }];
 }
 
+- (void)sendUseProtocal
+{
+    GetUserPermissionApi *api = [[GetUserPermissionApi alloc]init];
+    [_manager sendRequest:api];
+}
 
+- (void)respSuc:(id)data
+{
+    PermUserEntity *perUser = [DataConvert convertDic:data toEntity:[PermUserEntity class]];
+    DepartmentModel *depart = perUser.PermUserInfos[0];
+    
+    UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"
+                                                  message:depart.identify.uName
+                                                 delegate:nil cancelButtonTitle:@"cancle" otherButtonTitles:@"ok", nil];
+    [alert show];
+}
+
+- (void)respFail:(NSError *)error
+{
+    
+}
 
 
 

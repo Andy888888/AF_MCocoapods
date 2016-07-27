@@ -6,9 +6,9 @@
 //  Copyright © 2016年 燕文强. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AbsApi.h"
 #import "BaseApiDelegate.h"
 
-@interface BaseApi : NSObject<BaseApiDelegate>
+@interface BaseApi : AbsApi<BaseApiDelegate>
 
 @end
