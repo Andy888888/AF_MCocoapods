@@ -10,15 +10,8 @@
 
 @implementation RequestManager
 
-//static RequestManager *_manager;
-
 + (id)initManagerWithDelegate:(id<ResponseDelegate>)delegate
 {
-//    if(!_manager){
-//        _manager = [[RequestManager alloc]init];
-//        _manager.delegate = delegate;
-//    }
-//    return _manager;
     RequestManager *manager = [[RequestManager alloc]init];
     manager.delegate = delegate;
     return manager;

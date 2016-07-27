@@ -16,12 +16,12 @@
     return [self getBaseFieldWithOthers:@{
                                           @"PermUserInfos":@"PermUserInfos",
                                           }];
-    
 }
 
 +(NSValueTransformer *)PermUserInfosJSONTransformer
 {
     return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:[DepartmentModel class]];
+
 }
 
 @end

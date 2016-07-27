@@ -30,6 +30,7 @@
 }
 - (void)viewDidDisappear:(BOOL)animated
 {
+    [super viewDidDisappear:animated];
     [_manager cancelAllRequest];
 }
 

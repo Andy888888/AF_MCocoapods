@@ -13,9 +13,7 @@
 
 - (NSDictionary *)getBaseBody
 {
-    NSArray *arr = @[@"Ceshibj2015120166"];
-    return @{@"UserNumbers":arr,
-             @"IsMobileRequest":@"YES"};
+    return [self getBaseFieldWithOthers:@{@"UserNumbers":_staffNos}];
 }
 
 -(NSString *)getPath

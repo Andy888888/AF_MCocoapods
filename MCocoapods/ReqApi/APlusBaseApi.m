@@ -20,4 +20,20 @@
     return nil;
 }
 
+
+- (NSMutableDictionary *)getBaseFieldMapping
+{
+    NSMutableDictionary *mdic = [[NSMutableDictionary alloc]initWithDictionary:@{
+                                                                                 @"IsMobileRequest":@"YES"
+                                                                                 }];
+    return mdic;
+}
+
+- (NSMutableDictionary *)getBaseFieldWithOthers:(NSDictionary *)dic
+{
+    NSMutableDictionary *mdic = [self getBaseFieldMapping];
+    [mdic addEntriesFromDictionary:dic];
+    return mdic;
+}
+
 @end

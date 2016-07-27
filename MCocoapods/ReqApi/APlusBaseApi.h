@@ -10,4 +10,6 @@
 
 @interface APlusBaseApi : BaseApi
 
+- (NSMutableDictionary *)getBaseFieldWithOthers:(NSDictionary *)dic;
+
 @end

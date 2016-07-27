@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		8000CA8A1D470A4500BDA0EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8000CA891D470A4500BDA0EC /* main.m */; };
 		8000CA8D1D470A4500BDA0EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8000CA8C1D470A4500BDA0EC /* AppDelegate.m */; };
-		8000CA901D470A4500BDA0EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8000CA8F1D470A4500BDA0EC /* ViewController.m */; };
 		8000CA931D470A4500BDA0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000CA911D470A4500BDA0EC /* Main.storyboard */; };
 		8000CA951D470A4500BDA0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8000CA941D470A4500BDA0EC /* Assets.xcassets */; };
 		8000CA981D470A4500BDA0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000CA961D470A4500BDA0EC /* LaunchScreen.storyboard */; };
 		8000CAA31D470A4500BDA0EC /* MCocoapodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8000CAA21D470A4500BDA0EC /* MCocoapodsTests.m */; };
 		8000CAAE1D470A4500BDA0EC /* MCocoapodsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8000CAAD1D470A4500BDA0EC /* MCocoapodsUITests.m */; };
-		80A5FD8B1D47548800BD2126 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FD8A1D47548800BD2126 /* DataService.m */; };
 		80A5FD8F1D47574B00BD2126 /* PermUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FD8E1D47574B00BD2126 /* PermUserEntity.m */; };
 		80A5FD921D47579B00BD2126 /* APlusBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FD911D47579B00BD2126 /* APlusBaseEntity.m */; };
 		80A5FD961D47592A00BD2126 /* SubBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FD951D47592A00BD2126 /* SubBaseModel.m */; };
@@ -29,8 +27,11 @@
 		80A5FDB91D48476B00BD2126 /* GetUserPermissionApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDB81D48476B00BD2126 /* GetUserPermissionApi.m */; };
 		80A5FDBC1D484C6200BD2126 /* AbsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDBB1D484C6200BD2126 /* AbsApi.m */; };
 		80A5FDBF1D487C3800BD2126 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDBE1D487C3800BD2126 /* RequestManager.m */; };
-		80A5FDC21D48827100BD2126 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDC11D48827100BD2126 /* BaseViewController.m */; };
 		80A5FDC51D489A8B00BD2126 /* APlusBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDC41D489A8B00BD2126 /* APlusBaseApi.m */; };
+		80A5FDD31D48C86D00BD2126 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDCE1D48C86D00BD2126 /* BaseViewController.m */; };
+		80A5FDD41D48C86D00BD2126 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDD01D48C86D00BD2126 /* SecondViewController.m */; };
+		80A5FDD51D48C86D00BD2126 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDD21D48C86D00BD2126 /* ViewController.m */; };
+		80A5FDDD1D48CCA600BD2126 /* SecondApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A5FDDC1D48CCA600BD2126 /* SecondApi.m */; };
 		D7EDFB7BA016455E4D72468E /* Pods_MCocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9427D81B963677C928BD3AA7 /* Pods_MCocoapods.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +58,6 @@
 		8000CA891D470A4500BDA0EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8000CA8B1D470A4500BDA0EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8000CA8C1D470A4500BDA0EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8000CA8E1D470A4500BDA0EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8000CA8F1D470A4500BDA0EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8000CA921D470A4500BDA0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8000CA941D470A4500BDA0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8000CA971D470A4500BDA0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,8 +68,6 @@
 		8000CAA91D470A4500BDA0EC /* MCocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCocoapodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8000CAAD1D470A4500BDA0EC /* MCocoapodsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCocoapodsUITests.m; sourceTree = "<group>"; };
 		8000CAAF1D470A4500BDA0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80A5FD891D47548800BD2126 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataService.h; path = Tool/DataService.h; sourceTree = "<group>"; };
-		80A5FD8A1D47548800BD2126 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataService.m; path = Tool/DataService.m; sourceTree = "<group>"; };
 		80A5FD8D1D47574B00BD2126 /* PermUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PermUserEntity.h; path = RepEntity/PermUserEntity.h; sourceTree = "<group>"; };
 		80A5FD8E1D47574B00BD2126 /* PermUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PermUserEntity.m; path = RepEntity/PermUserEntity.m; sourceTree = "<group>"; };
 		80A5FD901D47579B00BD2126 /* APlusBaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APlusBaseEntity.h; path = RepEntity/APlusBaseEntity.h; sourceTree = "<group>"; };
@@ -98,10 +95,16 @@
 		80A5FDBB1D484C6200BD2126 /* AbsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbsApi.m; path = ReuqestManager/AbsApi.m; sourceTree = "<group>"; };
 		80A5FDBD1D487C3800BD2126 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestManager.h; path = ReuqestManager/RequestManager.h; sourceTree = "<group>"; };
 		80A5FDBE1D487C3800BD2126 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestManager.m; path = ReuqestManager/RequestManager.m; sourceTree = "<group>"; };
-		80A5FDC01D48827100BD2126 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		80A5FDC11D48827100BD2126 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		80A5FDC31D489A8B00BD2126 /* APlusBaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APlusBaseApi.h; path = ReqApi/APlusBaseApi.h; sourceTree = "<group>"; };
 		80A5FDC41D489A8B00BD2126 /* APlusBaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APlusBaseApi.m; path = ReqApi/APlusBaseApi.m; sourceTree = "<group>"; };
+		80A5FDCD1D48C86D00BD2126 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ViewController/BaseViewController.h; sourceTree = "<group>"; };
+		80A5FDCE1D48C86D00BD2126 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewController/BaseViewController.m; sourceTree = "<group>"; };
+		80A5FDCF1D48C86D00BD2126 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ViewController/SecondViewController.h; sourceTree = "<group>"; };
+		80A5FDD01D48C86D00BD2126 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ViewController/SecondViewController.m; sourceTree = "<group>"; };
+		80A5FDD11D48C86D00BD2126 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewController/ViewController.h; sourceTree = "<group>"; };
+		80A5FDD21D48C86D00BD2126 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
+		80A5FDDB1D48CCA600BD2126 /* SecondApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondApi.h; path = ReqApi/SecondApi.h; sourceTree = "<group>"; };
+		80A5FDDC1D48CCA600BD2126 /* SecondApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondApi.m; path = ReqApi/SecondApi.m; sourceTree = "<group>"; };
 		9427D81B963677C928BD3AA7 /* Pods_MCocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96579D2572B1BA21F72081A /* Pods-MCocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCocoapods/Pods-MCocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,13 +180,10 @@
 				80B4104F1D47A6B3000C1920 /* ReuqestManager */,
 				80A5FDB31D4846B300BD2126 /* ReqApi */,
 				80A5FD8C1D47565A00BD2126 /* RepEntity */,
+				80A5FDCC1D48C7A100BD2126 /* ViewController */,
 				80A5FD881D47544500BD2126 /* Tool */,
 				8000CA8B1D470A4500BDA0EC /* AppDelegate.h */,
 				8000CA8C1D470A4500BDA0EC /* AppDelegate.m */,
-				80A5FDC01D48827100BD2126 /* BaseViewController.h */,
-				80A5FDC11D48827100BD2126 /* BaseViewController.m */,
-				8000CA8E1D470A4500BDA0EC /* ViewController.h */,
-				8000CA8F1D470A4500BDA0EC /* ViewController.m */,
 				8000CA911D470A4500BDA0EC /* Main.storyboard */,
 				8000CA941D470A4500BDA0EC /* Assets.xcassets */,
 				8000CA961D470A4500BDA0EC /* LaunchScreen.storyboard */,
@@ -222,8 +222,6 @@
 		80A5FD881D47544500BD2126 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				80A5FD891D47548800BD2126 /* DataService.h */,
-				80A5FD8A1D47548800BD2126 /* DataService.m */,
 				80A5FDA61D475E5F00BD2126 /* DataConvert.h */,
 				80A5FDA71D475E5F00BD2126 /* DataConvert.m */,
 			);
@@ -234,10 +232,10 @@
 			isa = PBXGroup;
 			children = (
 				80A5FD931D47590000BD2126 /* SubModel */,
-				80A5FD8D1D47574B00BD2126 /* PermUserEntity.h */,
-				80A5FD8E1D47574B00BD2126 /* PermUserEntity.m */,
 				80A5FD901D47579B00BD2126 /* APlusBaseEntity.h */,
 				80A5FD911D47579B00BD2126 /* APlusBaseEntity.m */,
+				80A5FD8D1D47574B00BD2126 /* PermUserEntity.h */,
+				80A5FD8E1D47574B00BD2126 /* PermUserEntity.m */,
 			);
 			name = RepEntity;
 			sourceTree = "<group>";
@@ -266,8 +264,23 @@
 				80A5FDC41D489A8B00BD2126 /* APlusBaseApi.m */,
 				80A5FDB71D48476B00BD2126 /* GetUserPermissionApi.h */,
 				80A5FDB81D48476B00BD2126 /* GetUserPermissionApi.m */,
+				80A5FDDB1D48CCA600BD2126 /* SecondApi.h */,
+				80A5FDDC1D48CCA600BD2126 /* SecondApi.m */,
 			);
 			name = ReqApi;
+			sourceTree = "<group>";
+		};
+		80A5FDCC1D48C7A100BD2126 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80A5FDCD1D48C86D00BD2126 /* BaseViewController.h */,
+				80A5FDCE1D48C86D00BD2126 /* BaseViewController.m */,
+				80A5FDCF1D48C86D00BD2126 /* SecondViewController.h */,
+				80A5FDD01D48C86D00BD2126 /* SecondViewController.m */,
+				80A5FDD11D48C86D00BD2126 /* ViewController.h */,
+				80A5FDD21D48C86D00BD2126 /* ViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		80B4104F1D47A6B3000C1920 /* ReuqestManager */ = {
@@ -467,9 +480,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A5FDDD1D48CCA600BD2126 /* SecondApi.m in Sources */,
+				80A5FDD31D48C86D00BD2126 /* BaseViewController.m in Sources */,
 				80A5FD961D47592A00BD2126 /* SubBaseModel.m in Sources */,
-				80A5FDC21D48827100BD2126 /* BaseViewController.m in Sources */,
-				8000CA901D470A4500BDA0EC /* ViewController.m in Sources */,
 				8000CA8D1D470A4500BDA0EC /* AppDelegate.m in Sources */,
 				80A5FDBC1D484C6200BD2126 /* AbsApi.m in Sources */,
 				80A5FDA81D475E5F00BD2126 /* DataConvert.m in Sources */,
@@ -479,10 +492,11 @@
 				80A5FDA21D475A9600BD2126 /* PermisstionsModel.m in Sources */,
 				8000CA8A1D470A4500BDA0EC /* main.m in Sources */,
 				80A5FDB01D4845BC00BD2126 /* BaseApi.m in Sources */,
-				80A5FD8B1D47548800BD2126 /* DataService.m in Sources */,
 				80A5FDB11D4845BC00BD2126 /* BaseServiceManager.m in Sources */,
 				80A5FD8F1D47574B00BD2126 /* PermUserEntity.m in Sources */,
+				80A5FDD51D48C86D00BD2126 /* ViewController.m in Sources */,
 				80A5FDBF1D487C3800BD2126 /* RequestManager.m in Sources */,
+				80A5FDD41D48C86D00BD2126 /* SecondViewController.m in Sources */,
 				80A5FD9C1D4759F900BD2126 /* DepartmentModel.m in Sources */,
 				80A5FD921D47579B00BD2126 /* APlusBaseEntity.m in Sources */,
 				80A5FD991D4759B100BD2126 /* IdentifyModel.m in Sources */,

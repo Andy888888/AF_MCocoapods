@@ -11,4 +11,6 @@
 
 @interface GetUserPermissionApi : APlusBaseApi
 
+@property (nonatomic,strong) NSArray *staffNos;
+
 @end
