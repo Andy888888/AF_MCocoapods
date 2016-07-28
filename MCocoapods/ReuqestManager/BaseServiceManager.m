@@ -11,13 +11,6 @@
 
 @implementation BaseServiceManager
 
-- (instancetype)init
-{
-    self = [super init];
-    self.queueHttpManager = [[NSMutableArray alloc]init];
-    return self;
-}
-
 + (id)initManager
 {
     BaseServiceManager *baseManager = [[BaseServiceManager alloc]init];
@@ -37,15 +30,6 @@
     }
 }
 
-- (void)cancelAllRequest
-{
-    NSInteger startIndex = self.queueHttpManager.count-1;
-    for (NSInteger i = startIndex; i >= 0; i--) {
-        AFHTTPSessionManager *manager = self.queueHttpManager[i];
-        [manager.operationQueue cancelAllOperations];
-    }
-}
-
 - (AFHTTPSessionManager *)createAFHttpManagerForApi:(AbsApi<BaseApiDelegate>*)api
 {
     int timeOut = [api getTimeOut];
@@ -61,9 +45,6 @@
     
     //设置Header
     [self setHeader:manager withDic:api.getBaseHeader];
-    
-    //添加到数组
-    [self.queueHttpManager addObject:manager];
     
     return manager;
 }

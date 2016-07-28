@@ -25,13 +25,9 @@
 
 - (void)dealloc
 {
-    [_manager cancelAllRequest];
     _manager.delegate = nil;
-}
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [_manager cancelAllRequest];
+    _manager = nil;
+    NSLog(@"%@页面销毁, manager = %@",self,_manager);
 }
 
 - (void)respSuc:(id)data

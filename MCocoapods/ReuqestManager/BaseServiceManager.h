@@ -20,8 +20,6 @@ typedef void (^ResponseFailureBlock)(NSError *error);
 /// @warning 请不要随便修改
 @interface BaseServiceManager : NSObject
 
-@property (nonatomic,strong) NSMutableArray *queueHttpManager;
-
 + (id)initManager;
 
 /// 使用block方式发送数据请求；api：发送参数，sucBlock：成功回调，failBlock：失败回调
@@ -29,6 +27,6 @@ typedef void (^ResponseFailureBlock)(NSError *error);
            sucBlock:(ResponseSuccessBlock)sucBlock
            falBlock:(ResponseFailureBlock)failBlock;
 - (AFHTTPSessionManager *)createAFHttpManagerForApi:(AbsApi<BaseApiDelegate>*)api;
-- (void)cancelAllRequest;
+//- (void)cancelAllRequest;
 
 @end
