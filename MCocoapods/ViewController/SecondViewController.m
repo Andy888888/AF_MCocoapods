@@ -70,7 +70,8 @@
 
 #pragma mark - 数据返回 ResponseDelegate
 
-- (void)respSuc:(id)data{
+- (void)respSuc:(id)data andRespClass:(id)cls
+{
     NSLog(@"第二个界面返回数据：%@",data);
     UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"请求成功"
                                                   message:nil

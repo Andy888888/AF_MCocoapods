@@ -42,6 +42,10 @@
 /// @warning 默认为nil，遵守实现者必须实现
 - (NSString *)getPath;
 
+/// 请求返回数据实体Class
+/// @warning 默认为nil，用来区分返回来的数据类型
+- (Class)getRespClass;
+
 
 
 

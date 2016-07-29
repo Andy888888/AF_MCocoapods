@@ -32,6 +32,10 @@
 {
     NSString *requestUrl = [api getReqUrl];
     NSDictionary *bodyDic = [api getBaseBody];
+    Class cls = [api getRespClass];
+    
+    NSLog(@"********[请求地址：%@]",requestUrl);
+    NSLog(@"********[请求参数：%@]",bodyDic);
     
     AFHTTPSessionManager *manager = [self createAFHttpManagerForApi:api];
     
@@ -40,11 +44,10 @@
          progress:^(NSProgress * _Nonnull uploadProgress) {
              NSLog(@"%@",uploadProgress);
          } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-             NSLog(@"%@",task);
              //请求成功
              NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
              if (self.delegate) {
-                 [self.delegate respSuc:dic];
+                 [self.delegate respSuc:dic andRespClass:cls];
              }
              
          } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -59,6 +62,7 @@
 {
     NSString *requestUrl = [api getReqUrl];
     NSDictionary *paramDic = [api getBaseBody];
+    Class cls = [api getRespClass];
     
     NSLog(@"********[请求地址：%@]",requestUrl);
     NSLog(@"********[请求参数：%@]",paramDic);
@@ -73,7 +77,7 @@
             //请求成功
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
             if (self.delegate) {
-                [self.delegate respSuc:dic];
+                [self.delegate respSuc:dic andRespClass:cls];
             }
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

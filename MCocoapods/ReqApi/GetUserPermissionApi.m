@@ -8,6 +8,7 @@
 
 #import "GetUserPermissionApi.h"
 #import "BaseApiDelegate.h"
+#import "PermUserEntity.h"
 
 @implementation GetUserPermissionApi
 
@@ -19,6 +20,11 @@
 -(NSString *)getPath
 {
     return @"WebApiPermisstion/get_user_permisstion";
+}
+
+- (Class)getRespClass
+{
+    return [PermUserEntity class];
 }
 
 

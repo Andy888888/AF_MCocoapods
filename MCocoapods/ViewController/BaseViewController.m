@@ -30,7 +30,7 @@
     NSLog(@"%@页面销毁, manager = %@",self,_manager);
 }
 
-- (void)respSuc:(id)data
+- (void)respSuc:(id)data andRespClass:(id)cls
 {
 }
 

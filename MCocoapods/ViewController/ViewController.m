@@ -76,18 +76,21 @@
 #pragma mark - 网络请求结果 ResponseDelegate
 //在项目中保证该回调放在文件最底部
 
-- (void)respSuc:(id)data
+- (void)respSuc:(id)data andRespClass:(id)cls
 {
-    NSLog(@"第一个界面返回数据：%@",data);
-    PermUserEntity *perUser = [DataConvert convertDic:data toEntity:[PermUserEntity class]];
-    DepartmentModel *depart = perUser.PermUserInfos[0];
-    
-    UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"
-                                                  message:depart.identify.uName
-                                                 delegate:nil
-                                        cancelButtonTitle:@"cancle"
-                                        otherButtonTitles:@"ok", nil];
-    [alert show];
+    if([cls isEqual:[PermUserEntity class]])
+    {
+        NSLog(@"第一个界面返回数据：%@",data);
+        PermUserEntity *perUser = [DataConvert convertDic:data toEntity:cls];
+        DepartmentModel *depart = perUser.PermUserInfos[0];
+        
+        UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"提示"
+                                                      message:depart.identify.uName
+                                                     delegate:nil
+                                            cancelButtonTitle:@"cancle"
+                                            otherButtonTitles:@"ok", nil];
+        [alert show];
+    }
 }
 
 - (void)respFail:(NSError *)error

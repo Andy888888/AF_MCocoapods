@@ -35,6 +35,11 @@
     return nil;
 }
 
+- (Class)getRespClass
+{
+    return nil;
+}
+
 
 
 @end

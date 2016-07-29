@@ -13,7 +13,7 @@
 @protocol ResponseDelegate <NSObject>
 
 /// 响应成功
-- (void)respSuc:(id)data;
+- (void)respSuc:(id)data andRespClass:cls;
 /// 响应失败
 - (void)respFail:(NSError *)error;
 
