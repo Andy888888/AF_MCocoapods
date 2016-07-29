@@ -60,6 +60,9 @@
     NSString *requestUrl = [api getReqUrl];
     NSDictionary *paramDic = [api getBaseBody];
     
+    NSLog(@"********[请求地址：%@]",requestUrl);
+    NSLog(@"********[请求参数：%@]",paramDic);
+    
     AFHTTPSessionManager *manager = [self createAFHttpManagerForApi:api];
     
     [manager GET:requestUrl

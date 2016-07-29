@@ -40,7 +40,7 @@
     manager.requestSerializer.timeoutInterval = timeOut;
     [self setAcceptableContentTypes:manager];
     //设置请求数据的解析方式
-    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     //设置Header
