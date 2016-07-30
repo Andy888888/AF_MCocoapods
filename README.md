@@ -11,12 +11,9 @@ AF_MCocoapods
 
 
 [BaseRequestApi]<br>
-1.getBaseHeader     //请求基础header<br>
-2.getBaseBody       //请求基础body\<br>
-3.getRootUrl				//请求rootUrl
-
-4.getPath           //请求url后半部分
-
-5.getRequestMethod  //请求方式
-
-6.setTimeOut				//设置超时时间
+    1.getBaseHeader     //请求基础header<br>
+    2.getBaseBody       //请求基础body<br>
+    3.getRootUrl				//请求rootUrl<br>
+    4.getPath           //请求url后半部分<br>
+    5.getRequestMethod  //请求方式<br>
+    6.setTimeOut				//设置超时时间<br>
