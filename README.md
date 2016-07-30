@@ -4,7 +4,9 @@ AF_MCocoapods
 感谢王雅琦，李慧娟一起验证，给于修改建议。
 
 1.添加header		[manager.requestSerializer setValue: forHTTPHeaderField:];
+===
 2.manager  cancelAll request		[manager.operationQueue cancelAllOperations];	
+---
 3.set timeOut		manager.requestSerializer.timeoutInterval = 30;
 
 
