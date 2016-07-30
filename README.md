@@ -18,3 +18,12 @@ AF_MCocoapods
     4.getPath           //请求url后半部分<br>
     5.getRequestMethod  //请求方式<br>
     6.setTimeOut				//设置超时时间<br>
+    
+    
+``` Object-c
+/// 请求基础body
+/// @warning 默认body为nil
+- (NSDictionary *)getBaseBody
+{
+    return nil;
+}
