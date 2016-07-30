@@ -20,7 +20,7 @@ AF_MCocoapods
     6.setTimeOut				//设置超时时间<br>
     
     
-``` Object-c
+``` Object-C
 /// 请求基础body
 /// @warning 默认body为nil
 - (NSDictionary *)getBaseBody
